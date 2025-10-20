@@ -1,0 +1,822 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fish and Ships Pro\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-23 17:19+0000\n"
+"PO-Revision-Date: 2020-03-31 01:20+0200\n"
+"Last-Translator: admin_ma <info@wp-centrics.com>\n"
+"Language-Team: Español\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Loco-Version: 2.3.1; wp-5.4-RC2-47447\n"
+
+#: fish-and-ships-pro.php:314
+msgid "Add a selector"
+msgstr "Añadir un selector"
+
+#: fish-and-ships-pro.php:318
+msgid "Add an action"
+msgstr "Añadir una acción"
+
+#: fish-and-ships-pro.php:937
+msgctxt "cart objects group-by option"
+msgid "None [no grouping]"
+msgstr "Nada [no agrupar]"
+
+#: fish-and-ships-pro.php:938
+msgctxt "cart objects group-by option"
+msgid "Per ID / SKU"
+msgstr "Por ID / SKU"
+
+#: fish-and-ships-pro.php:939
+msgctxt "cart objects group-by option"
+msgid "Per product [group variations]"
+msgstr "Por producto [agrupar variaciones]"
+
+#: fish-and-ships-pro.php:940
+msgctxt "cart objects group-by option"
+msgid "Per shipping class"
+msgstr "Por clase de envío"
+
+#: fish-and-ships-pro.php:941
+msgctxt "cart objects group-by option"
+msgid "All grouped as one"
+msgstr "Todos agrupados como uno"
+
+#: fish-and-ships-pro.php:1144
+msgctxt "label, shorted, for minimum input number"
+msgid "Min:"
+msgstr "Mín.:"
+
+#: fish-and-ships-pro.php:1148
+msgctxt "label, shorted, for maximum input number"
+msgid "Max:"
+msgstr "Máx.:"
+
+#: fish-and-ships-pro.php:1222
+msgid "Select one criterion"
+msgstr "Selecciona un criterio"
+
+#: fish-and-ships-pro.php:1242
+msgctxt "button caption"
+msgid "Remove selector"
+msgstr "Eliminar selector"
+
+#: fish-and-ships-pro.php:1270
+msgctxt "shorted, label for options field"
+msgid "Group by:"
+msgstr "Agrupar por:"
+
+#: fish-and-ships-pro.php:1270 fish-and-ships-pro.php:1285
+#: includes/settings-fns.php:64
+msgid ""
+"It will determine how the cart products should be grouped (or not) before "
+"analyze if it matches the selection conditions."
+msgstr ""
+"Determinará cómo los productos de la cesta deben agruparse (o no) antes de "
+"analizar si las condiciones de selección se cumplen."
+
+#: fish-and-ships-pro.php:1285
+msgid "This method can't group cart items and it will be compared one by one"
+msgstr ""
+"Este método no puede agrupar los elementos de la cesta y serán evaluados uno "
+"a uno"
+
+#: fish-and-ships-pro.php:1335
+msgid "Select one action"
+msgstr "Selecciona una acción"
+
+#: fish-and-ships-pro.php:1355
+msgctxt "button caption"
+msgid "Remove action"
+msgstr "Eliminar acción"
+
+#: fish-and-ships-pro.php:1697
+msgid "Start: run wizard"
+msgstr "Inicio: ejecutar wizard"
+
+#. Description of the plugin
+#: fish-and-ships-pro.php:1742 includes/shipping-class.php:33
+#: includes/wizard.php:118
+msgid ""
+"A WooCommerce shipping method. Easy to understand and easy to use, it gives "
+"you an incredible flexibility."
+msgstr ""
+"Un método de envío para WooCommerce. Fácil de entender y fácil de usar, te "
+"proporciona una increíble flexibilidad."
+
+#: fish-and-ships-pro.php:1743
+msgid "Go to online help documentation"
+msgstr "Ir a la documentación de ayuda online"
+
+#: fish-and-ships-pro.php:1744 includes/shipping_rules-table-fns.php:238
+msgid "Get support on WordPress repository"
+msgstr "Obtener soporte en el repositorio de WordPress"
+
+#: fish-and-ships-pro.php:1746 includes/wizard.php:119
+msgid "Start wizard"
+msgstr "Empezar wizard"
+
+#: fish-and-ships-pro.php:1746 includes/shipping_rules-table-fns.php:238
+msgid "Get support about Fish and Ships Pro"
+msgstr "Obtener soporte para Fish and Ships Pro"
+
+#: includes/freemium-panel.php:54
+msgid "Please, enter your serial:"
+msgstr "Por favor, entra tu número de serie:"
+
+#: includes/freemium-panel.php:56
+msgid "Your plugin will not be updated until you enter the serial number."
+msgstr "Tu plugin no será actualizado hasta que entres el número de serie."
+
+#: includes/freemium-panel.php:64
+msgid "Thank you for your registration"
+msgstr "Gracias por registrarte"
+
+#: includes/freemium-panel.php:66
+msgid "Registered"
+msgstr "Registrado"
+
+#: includes/freemium-panel.php:69
+msgid "Checking your registration:"
+msgstr "Comprobación de tu registro:"
+
+#: includes/freemium-panel.php:78
+msgid ""
+"You can always register your plugin, get support and check your license or "
+"get a new serial in (our website)."
+msgstr ""
+"Puedes registrar tu plugin, obtener soporte y comprobar tu licencia u obtener "
+"un número de serie nuevo en (nuestra web)."
+
+#: includes/freemium-panel.php:84
+msgid ""
+"The introduced serial doesn't match the right pattern, should be something "
+"like this: XXXXX-XXXXX-XXXXX-XXXXX."
+msgstr ""
+"El número de serie introducido no parece correcto. Debiera seguir el "
+"siguiente patrón: XXXXX-XXXXX-XXXXX-XXXXX."
+
+#: includes/freemium-panel.php:89
+msgctxt "button caption"
+msgid "Change Serial"
+msgstr "Cambiar núm. serie"
+
+#: includes/freemium-panel.php:91
+msgid "Serial number:"
+msgstr "Número de serie:"
+
+#: includes/freemium-panel.php:92
+msgctxt "button caption"
+msgid "Save Serial"
+msgstr "Guardar núm. serie"
+
+#: includes/freemium-panel.php:111
+msgid ""
+"This plugin is free and updates through the standard WordPress plugins "
+"repository. This free version have some features limited."
+msgstr ""
+"Este plugin es gratuito y se actualiza a través del repositorio estándar de "
+"WordPress. La versión gratuita tiene algunas características limitadas."
+
+#: includes/freemium-panel.php:114
+msgid ""
+"There is a <strong>professional</strong> version with amazing extra features. "
+"It works in the same way as free version, simply give you more options: New "
+"<strong>selection methods</strong>, the ability of set <strong>different "
+"group criteria</strong> on every selection, much more <strong>special "
+"actions</strong> and of course, upgrades and prioritary support."
+msgstr ""
+"Hay una versión <strong>profesional</strong> con extraordinarias "
+"características añadidas. Funciona de la misma manera que la versión "
+"gratuita, simplemente tiene más opciones: Nuevos <strong>métodos de "
+"selección</strong>, la capacidad de establecer <strong>diferentes criterios "
+"de agrupación</strong> en cada selección, muchas más <strong>acciones "
+"especiales</strong> y naturalmente, actualizaciones y soporte prioritario."
+
+#: includes/freemium-panel.php:117
+msgid ""
+"You can take a look about this, compare free vs pro features, license prices "
+"and conditions, etc. here:"
+msgstr ""
+"Puedes echar un vistazo, comparar las diferencias entre las versiones free y "
+"pro, precios de licencia y condiciones, etc. aquí:"
+
+#: includes/logs-panel.php:26
+msgid ""
+"We encourage you to enable the WooCommerce debug mode while you're testing or "
+"configure the shipping methods."
+msgstr ""
+"Te recomendamos que actives el \"modo debug\" de WooCommerce mientras estés "
+"probando o configurando tus métodos de envío."
+
+#: includes/logs-panel.php:27
+msgid ""
+"It will show matching shipping zones and bypass the WooCommerce shipping rate "
+"cache."
+msgstr ""
+"Te mostrará la selección de la zona de envío y deshabilitará el caché en los "
+"costes de envío."
+
+#: includes/logs-panel.php:29
+msgctxt "button caption"
+msgid "Enable here"
+msgstr "Habilitar aquí"
+
+#: includes/logs-panel.php:64
+#, php-format
+msgid "%s Logs has been deleted."
+msgstr "%s Registros (logs) han sido eliminados."
+
+#: includes/logs-panel.php:78
+msgid ""
+"This shipping method have not logs yet (or maybe should refresh this page to "
+"see it new ones)."
+msgstr ""
+"Este método de envío no tiene registros (logs) aún (o quizá debas refrescar "
+"esta página para ver si hay alguno nuevo)."
+
+#: includes/logs-panel.php:89
+msgctxt "table cell title, human date"
+msgid "When"
+msgstr "Cuando"
+
+#: includes/logs-panel.php:91
+msgid "See"
+msgstr "Ver"
+
+#: includes/logs-panel.php:92
+msgid "Shipping cost"
+msgstr "Coste de envío"
+
+#: includes/logs-panel.php:93
+msgctxt "table cell title, number of items"
+msgid "Cart Items"
+msgstr "Productos en la cesta"
+
+#: includes/logs-panel.php:130
+msgid "Open"
+msgstr "Abrir"
+
+#: includes/logs-panel.php:130
+msgid "Close"
+msgstr "Cerrar"
+
+#: includes/logs-panel.php:157
+msgid "Remove selected logs"
+msgstr "Eliminar los registros seleccionados"
+
+#: includes/logs-panel.php:162
+#, php-format
+msgid "Shown the last %s logs of %s"
+msgstr "Se muestran los últimos %s registros de %s"
+
+#: includes/logs-panel.php:165
+#, php-format
+msgid "* The logs will be deleted after %s days"
+msgstr "* Los registros (logs) serán eliminados después de %s días"
+
+#: includes/settings-fns.php:16
+msgid ""
+"Only the <strong>Pro version</strong> allow distinct grouping criteria on "
+"every selection condition."
+msgstr ""
+"Solamente la <strong>versión Pro</strong> permite distintos criterios de "
+"agrupación para cada condición de selección."
+
+#: includes/settings-fns.php:34 includes/settings-fns.php:48
+#: includes/settings-fns.php:83 includes/settings-fns.php:114
+#: includes/settings-fns.php:125 includes/settings-fns.php:142
+msgid "Click to open detailed help about all input fields."
+msgstr "Haz clic para abrir ayuda detallada sobre todos los campos."
+
+#: includes/settings-fns.php:48
+msgid "Should apply taxes over the calculated shipping cost?"
+msgstr "¿Deben aplicarse impuestos sobre los costes de envío calculados?"
+
+#: includes/settings-fns.php:53
+msgctxt "shorted, label for global group-by activation"
+msgid "Global group-by"
+msgstr "Agrupar por (global)"
+
+#: includes/settings-fns.php:55
+msgid ""
+"All the selection methods will use the same group product criterion (just "
+"below)"
+msgstr ""
+"Todos los métodos de selección usarán el mismo criterio de agrupación de "
+"productos (justo debajo)"
+
+#: includes/settings-fns.php:56
+msgid ""
+"Uncheck it and you can set the group-by option for every selector (a bit "
+"messy but much powerful)."
+msgstr ""
+"Desmárcala y podrás establecer la opción de agrupación para cada selector (un "
+"poco más complejo, pero mucho más potente)."
+
+#: includes/settings-fns.php:56 includes/settings-fns.php:64
+msgid "Click to open detailed help about Group by."
+msgstr "Haz clic para abrir ayuda detallada sobre Agrupar por."
+
+#: includes/settings-fns.php:63
+msgctxt "shorted, label for global group-by method select"
+msgid "Group by [for all selectors]"
+msgstr "Agrupar por [para todos los selectores]"
+
+#: includes/settings-fns.php:79
+msgid "Charge all matching rules"
+msgstr "Cargar todas las reglas que se cumplan"
+
+#: includes/settings-fns.php:80
+msgid "Charge only the most expensive matching rule"
+msgstr "Cargar solamente la regla más cara que se cumpla"
+
+#: includes/settings-fns.php:81
+msgid "Charge only the most cheap matching rule"
+msgstr "Cargar solamente la regla más barata que se cumpla"
+
+#: includes/settings-fns.php:83
+msgid ""
+"You can choose between charge all rules or only the most expensive/cheap one."
+msgstr "Puedes escoger entre cargar todas las reglas o sólo la más cara/barata."
+
+#: includes/settings-fns.php:88
+msgctxt "the table title"
+msgid "Shipping rules"
+msgstr "Reglas de envío"
+
+#: includes/settings-fns.php:90
+msgid "Set up the shipping rules below. Here the (Main Help)"
+msgstr ""
+"Establece las reglas de envío aquí abajo. Puedes leer la (Ayuda principal)"
+
+#: includes/settings-fns.php:101
+msgid "Volumetric Weight Factor"
+msgstr "Factor de peso volumétrico"
+
+#: includes/settings-fns.php:103
+msgid ""
+"The factor value to calculate the volumetric weight. Click to open detailed "
+"help about."
+msgstr ""
+"El factor para calcular el peso volumétrico. Haz clic para obtener ayuda "
+"detallada."
+
+#: includes/settings-fns.php:105
+msgid "i.e. 5000"
+msgstr ""
+
+#: includes/settings-fns.php:110
+msgid "Min shipping cost"
+msgstr "Coste de envío mínimo"
+
+#: includes/settings-fns.php:114
+msgid "The minimum shipping cost in any case (if any shipping rule matches)."
+msgstr ""
+"El coste mínimo de envío en cualquier caso (si alguna regla de envío es "
+"aplicable)."
+
+#: includes/settings-fns.php:121
+msgid "Max shipping cost"
+msgstr "Coste de envío máximo"
+
+#: includes/settings-fns.php:125
+msgid "The maximum shipping cost in any case (if any shipping rule matches)."
+msgstr ""
+"El coste máximo de envío en cualquier caso (si alguna regla de envío es "
+"aplicable)."
+
+#: includes/settings-fns.php:132
+msgid "Write logs"
+msgstr "Guardar registros (logs)"
+
+#: includes/settings-fns.php:136
+msgctxt "switch on/off"
+msgid "Off"
+msgstr "Deshabilitado"
+
+#: includes/settings-fns.php:137
+msgid "Save logs only from Admin users"
+msgstr "Guardar los registros de los Administradores solamente"
+
+#: includes/settings-fns.php:138
+msgid "Save logs from all users (only on pre-production)"
+msgstr "Guardar los registros de todos los usuarios (sólo en preproducción)"
+
+#: includes/settings-fns.php:141
+msgid "Really useful if you are testing your new-configured shipping method."
+msgstr ""
+"Realmente útil si estás comprobando tu nuevo método de envío recién "
+"configurado."
+
+#: includes/settings-fns.php:141
+msgid "The logs will be stored in your database and don't send anywhere."
+msgstr ""
+"Los registros (logs) serán guardados en tu base de datos y no se enviarán a "
+"nadie."
+
+#: includes/settings-fns.php:142
+msgid ""
+"It will help a lot to understand why the shipping costs don't does what you "
+"expect, and/or help us to debug."
+msgstr ""
+"De gran ayuda para entender por qué los costes de envío no hacen lo esperado, "
+"y/o ayudarnos a depurar."
+
+#: includes/settings-form-fns.php:28
+msgctxt "shorted, select-by conditional"
+msgid "Price"
+msgstr "Precio"
+
+#: includes/settings-form-fns.php:29
+msgctxt "shorted, select-by conditional"
+msgid "Weight"
+msgstr "Peso"
+
+#: includes/settings-form-fns.php:30
+msgctxt "shorted, select-by conditional"
+msgid "Volume"
+msgstr "Volumen"
+
+#: includes/settings-form-fns.php:31
+msgctxt "shorted, select-by conditional"
+msgid "Volumetric"
+msgstr "Volumétrico"
+
+#: includes/settings-form-fns.php:32
+msgctxt "shorted, select-by conditional"
+msgid "Cart items"
+msgstr "Núm. productos cesta"
+
+#: includes/settings-form-fns.php:34
+msgctxt "shorted, select-by conditional"
+msgid "Min dimension"
+msgstr "Dimensión mínima"
+
+#: includes/settings-form-fns.php:35
+msgctxt "shorted, select-by conditional"
+msgid "Mid dimension"
+msgstr "Dimensión media"
+
+#: includes/settings-form-fns.php:36
+msgctxt "shorted, select-by conditional"
+msgid "Max dimension"
+msgstr "Dimensión máxima"
+
+#: includes/settings-form-fns.php:37
+msgctxt "shorted, select-by conditional"
+msgid "Length+Width+Height"
+msgstr "Largo+Ancho+Alto"
+
+#: includes/settings-form-fns.php:39
+msgctxt "shorted, select-by conditional"
+msgid "In category"
+msgstr "En la categoría"
+
+#: includes/settings-form-fns.php:40
+msgctxt "shorted, select-by conditional"
+msgid "NOT In category"
+msgstr "NO En la categoría"
+
+#: includes/settings-form-fns.php:42
+msgctxt "shorted, select-by conditional"
+msgid "Tagged as"
+msgstr "Etiquetado (tagged) como"
+
+#: includes/settings-form-fns.php:43
+msgctxt "shorted, select-by conditional"
+msgid "NOT Tagged as"
+msgstr "NO Etiquetado como"
+
+#: includes/settings-form-fns.php:45
+msgctxt "shorted, select-by conditional"
+msgid "In shipping class"
+msgstr "En la clase de envío"
+
+#: includes/settings-form-fns.php:46
+msgctxt "shorted, select-by conditional"
+msgid "NOT In shipping class"
+msgstr "NO En clase envío"
+
+#: includes/settings-form-fns.php:432
+msgctxt "VERY shorted, once price application"
+msgid "(once)"
+msgstr "(una vez)"
+
+#: includes/settings-form-fns.php:434 includes/settings-form-fns.php:475
+#, php-format
+msgctxt "shorted, per weight price application"
+msgid "* weight (%s)"
+msgstr "* peso (%s)"
+
+#: includes/settings-form-fns.php:437
+msgctxt "VERY shorted, composite price application"
+msgid "composite"
+msgstr "compuesto"
+
+#: includes/settings-form-fns.php:471
+msgctxt "shorted, once price application"
+msgid "(once)"
+msgstr "(una vez)"
+
+#: includes/settings-form-fns.php:684
+msgctxt "shorted, action name"
+msgid "Abort shipping method"
+msgstr "Anular método de envío"
+
+#: includes/settings-form-fns.php:685
+msgctxt "shorted, action name"
+msgid "Skip N rules"
+msgstr "Saltar N reglas"
+
+#: includes/settings-form-fns.php:686
+msgctxt "shorted, action name"
+msgid "Reset previous costs"
+msgstr "Elimina costes previos"
+
+#: includes/settings-form-fns.php:687
+msgctxt "shorted, action name"
+msgid "Ignore below rules"
+msgstr "Ignora las reglas siguientes"
+
+#: includes/settings-form-fns.php:688
+msgctxt "shorted, action name"
+msgid "Set min/max rule costs"
+msgstr "Mín./máx. costes regla"
+
+#: includes/settings-form-fns.php:689
+msgctxt "shorted, action name"
+msgid "Unset match prods for next rules"
+msgstr "Unset match prods for next rules"
+
+#: includes/settings-form-fns.php:690
+msgctxt "shorted, action name"
+msgid "Show notice message"
+msgstr "Mostrar mensaje aviso"
+
+#: includes/settings-form-fns.php:691
+msgctxt "shorted, action name"
+msgid "Rename method title"
+msgstr "Renombra el método"
+
+#: includes/settings-form-fns.php:692
+msgctxt "shorted, action name"
+msgid "Add subtitle (text under)"
+msgstr "Añadir subtítulo (texto debajo)"
+
+#: includes/settings-form-fns.php:728
+msgctxt "label, shorted, for skip input number"
+msgid "Skip:"
+msgstr "Saltar:"
+
+#: includes/settings-form-fns.php:731
+msgctxt "shorted, number of rules to skip"
+msgid "rules"
+msgstr "reglas"
+
+#: includes/settings-form-fns.php:741
+msgctxt "button caption"
+msgid "Configure"
+msgstr "Configurar"
+
+#: includes/settings-form-fns.php:742
+msgid "Show notice message"
+msgstr "Mostrar mensaje de aviso"
+
+#: includes/settings-form-fns.php:743
+msgctxt "type of message"
+msgid "Type:"
+msgstr "Tipo:"
+
+#: includes/settings-form-fns.php:746
+msgctxt "type of message"
+msgid "Success"
+msgstr "Confirmación"
+
+#: includes/settings-form-fns.php:748
+msgctxt "type of message"
+msgid "Notice"
+msgstr "Aviso"
+
+#: includes/settings-form-fns.php:750
+msgctxt "type of message"
+msgid "Error"
+msgstr "Error"
+
+#: includes/settings-form-fns.php:753
+msgid "Message:"
+msgstr "Mensaje:"
+
+#: includes/settings-form-fns.php:762
+msgctxt "shipping title"
+msgid "Name:"
+msgstr "Nombre:"
+
+#: includes/settings-form-fns.php:765
+msgid "New shipping title"
+msgstr "Nuevo nombre envío"
+
+#: includes/settings-form-fns.php:771
+msgid "Subtitle:"
+msgstr "Subtítulo:"
+
+#: includes/settings-form-fns.php:774
+msgid "add a helper text"
+msgstr "añadir un texto auxiliar"
+
+#: includes/shipping_rules-data-js.php:50
+msgctxt "VERY shorted, logic operator (maybe better leave in english)"
+msgid "WHERE"
+msgstr "WHERE"
+
+#: includes/shipping_rules-data-js.php:51
+msgctxt "VERY shorted, logic operator (maybe better leave in english)"
+msgid "AND"
+msgstr "AND"
+
+#: includes/shipping_rules-data-js.php:54
+msgid "Please enter without decimals or thousand separators."
+msgstr "Por favor, éntralo sin decimales ni separador de millares."
+
+#: includes/shipping_rules-data-js.php:55
+msgctxt "Min field tip"
+msgid "Will match values equal or bigger than"
+msgstr "Se cumplirá para los valores iguales o mayores que"
+
+#: includes/shipping_rules-data-js.php:56
+msgctxt "Max (below value) field tip"
+msgid "Will match values BELOW than, e.g., put 101 to match from Min to 100.99"
+msgstr ""
+"Se cumplirá para valores POR DEBAJO de, p. ej., pon 101 para que se cumplan "
+"los valores desde Mín. hasta 100.99"
+
+#: includes/shipping_rules-data-js.php:57
+msgctxt "Min field tip"
+msgid ""
+"If the calculated rule cost is less than this, it will be set to this value."
+msgstr ""
+"Si el coste calculado para esta regla es menor, este será el coste de la "
+"regla."
+
+#: includes/shipping_rules-data-js.php:58
+msgctxt "Max field tip"
+msgid ""
+"If the calculated rule cost is greater than this, it will be set to this "
+"value."
+msgstr ""
+"Si el coste calculado para esta regla es mayor, este será el coste de la "
+"regla."
+
+#: includes/shipping_rules-table-fns.php:27
+msgid "Selection conditions"
+msgstr "Condiciones de selección"
+
+#: includes/shipping_rules-table-fns.php:27
+msgid ""
+"Here you can set one or more selection conditions for each rule. Only if all "
+"conditions in a rule matches with some cart content, shipping costs and "
+"special actions will be applied. Click to open detailed help about every "
+"selection method."
+msgstr ""
+"Aquí puedes establecer una o más condiciones de selección para cada regla. "
+"Solamente si todas las condiciones de la regla se cumplen sobre la cesta, "
+"serán aplicados los costes de envío y ejecutadas las Acciones Especiales. Haz "
+"clic para ampliar la ayuda sobre los métodos de selección."
+
+#: includes/shipping_rules-table-fns.php:28
+msgid "Shipping costs"
+msgstr "Costes de envío"
+
+#: includes/shipping_rules-table-fns.php:28
+msgid ""
+"The shipping costs will be applied only if the rule selection conditions "
+"matches. Click to open detailed help about shipping costs."
+msgstr ""
+"Los costes de envío serán aplicados solamente si las condiciones de selección "
+"de la regla coinciden con algún producto. Haz clic para abrir ayuda detallada "
+"acerca de los costes de envío."
+
+#: includes/shipping_rules-table-fns.php:29
+msgid "Special actions"
+msgstr "Acciones especiales"
+
+#: includes/shipping_rules-table-fns.php:29
+msgid ""
+"The actions will be executed only if the rule selection conditions matches. "
+"Click to open detailed help about every special action."
+msgstr ""
+"Las acciones serán ejecutadas solamente si las condiciones de selección se "
+"cumplen. Haz clic para obtener ayuda detallada de todas las acciones "
+"especiales."
+
+#: includes/shipping_rules-table-fns.php:213
+msgid "Add a new rule"
+msgstr "Añadir una nueva regla"
+
+#: includes/shipping_rules-table-fns.php:214
+msgid "Duplicate selected rules"
+msgstr "Duplicar las reglas seleccionadas"
+
+#: includes/shipping_rules-table-fns.php:215
+msgid "Delete selected rules"
+msgstr "Eliminar las reglas seleccionadas"
+
+#: includes/wizard.php:47 includes/wizard.php:65 includes/wizard.php:82
+#: includes/wizard.php:99
+msgid "Fish and Ships Wizard:"
+msgstr "Configurador de Fish and Ships:"
+
+#: includes/wizard.php:48
+msgid ""
+"And finally, here you can configure your Fish and Ships shipping method. "
+"Please, open the main help:"
+msgstr ""
+"I finalmente, aquí puedes configurar tu método de envío Fish and Ships. Por "
+"favor, abre la ayuda principal:"
+
+#: includes/wizard.php:49
+msgid "Open main help"
+msgstr "Abrir la ayuda principal"
+
+#: includes/wizard.php:50 includes/wizard.php:120 includes/wizard.php:149
+msgid "Remind later"
+msgstr "Recuérdamelo luego"
+
+#: includes/wizard.php:51 includes/wizard.php:121
+msgid "Thanks, I know how to use it"
+msgstr "Gracias, sé como usarlo"
+
+#: includes/wizard.php:66
+msgid "Configure the new zone, and then:"
+msgstr "Configura la nueva zona, y a continuación:"
+
+#: includes/wizard.php:67 includes/wizard.php:84
+msgid "add <strong>Fish and Ships</strong>, and edit it."
+msgstr "añade <strong>Fish and Ships</strong>, y edítalo."
+
+#: includes/wizard.php:83
+msgid "Now add a new shipping method:"
+msgstr "Ahora añade un nuevo método de envío:"
+
+#: includes/wizard.php:100
+msgid "First, select one shipping zone, or create a new one:"
+msgstr "Para empezar, selecciona una zona de envío, o crea una nueva:"
+
+#: includes/wizard.php:117
+msgid "Welcome to Fish and Ships:"
+msgstr "Bienvenido a Fish and Ships:"
+
+#: includes/wizard.php:143
+msgid "Do you like Fish and Ships?"
+msgstr "¿Te gusta Fish and Ships?"
+
+#: includes/wizard.php:144
+msgid ""
+"We are very pleased that you by now have been using our plugin a few days."
+msgstr ""
+"Estamos muy satisfechos de ver que llevas unos días usando nuestro plugin."
+
+#: includes/wizard.php:145
+msgid ""
+"Please, rate <strong>Fish and Ships</strong> on WordPress repository, it will "
+"help us a lot :)"
+msgstr ""
+"Por favor, evalúa <strong>Fish and Ships</strong> en el repositorio de "
+"WordPress, nos ayudarás mucho :)"
+
+#: includes/wizard.php:148
+msgid "Rate the plugin"
+msgstr "Votar el plugin"
+
+#: includes/wizard.php:150
+msgid "Don't show again"
+msgstr "No mostrar de nuevo"
+
+#. Name of the plugin
+msgid "Fish and Ships Pro"
+msgstr "Fish and Ships Pro"
+
+#. Description of the plugin
+msgid ""
+"A WooCommerce conditional table rate shipping method. Easy to understand and "
+"easy to use, it gives you an incredible flexibility."
+msgstr ""
+"Un método de envío para WooCommerce, basado en una tabla de precios "
+"condicional. Fácil de entender y de usar, te da una increíble flexibilidad."
+
+#. URI of the plugin
+msgid "https://www.wp-centrics.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "wpcentrics"
+msgstr "wpcentrics"
+
+#. Author URI of the plugin
+msgid "https://www.wp-centrics.com"
+msgstr ""

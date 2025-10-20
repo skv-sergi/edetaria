@@ -1,0 +1,21 @@
+.woopq_table .woopq_tr {
+    display: flex;
+    padding: 12px;
+}
+
+.woopq_table .woopq_tr .woopq_td:first-child {
+    width: 150px;
+}
+
+.woopq_table .woopq_tr .woopq_td:last-child {
+    flex-basis: 150px;
+    flex-grow: 1;
+}
+
+.woopq_table .woopq_tr.woopq_show_if_overwrite {
+    display: none;
+}
+
+.woopq_tab a:before {
+    content: '\f156' !important;
+}

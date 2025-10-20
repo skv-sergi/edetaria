@@ -1,0 +1,246 @@
+/*! Shop */
+// ==========================================================================
+
+.product_title {
+    font-weight: 800;
+}
+
+.price {
+    font-size: 24px;
+}
+
+.cart label {
+    font-size: 14px;
+    margin-right: 7px;
+}
+
+.cart input[type=number] {
+    font-size: 14px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid @black;
+    width: 3em;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+}
+
+.cart .quantity {
+    margin: 20px 0;
+}
+
+
+
+/* Share buttons (icons) */
+.share-icons {
+    margin: 1em 0;
+    transition-delay: 1.65s;
+}
+
+.share-icons p,
+.spotlight .content .share-icons p {
+    font-size: 12px;
+    font-weight: 800;
+    margin: 40px 0 5px;
+}
+
+.share-icons ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.share-icons ul.icons li {
+    display: inline-block;
+    padding: 0;
+    margin-right: 7px;
+}
+
+.share-icons ul.icons li:last-child {
+    padding-right: 0;
+}
+
+.share-icons ul.icons li > a,
+.share-icons ul.icons li > span {
+    border: 0;
+    text-decoration: none;
+    background-color: @white;
+}
+
+.share-icons ul.icons li > a {
+    display: flex;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 0;
+    transition: all 0.4s;
+}
+
+.share-icons ul.icons li a .icon {
+    fill: @black;
+	vertical-align: middle;
+	padding: 22%;
+    height: auto;
+}
+
+.share-icons ul.icons li a:hover .icon,
+.share-icons ul.icons li a:focus .icon {
+    fill: @red;
+}
+
+.share-icons ul.icons li > a .label,
+.share-icons ul.icons li > span .label {
+    display: none;
+}
+/* Share buttons ends */
+
+
+/* All wines menu */
+.wrapper-aside {
+    background-color: @grey;
+    padding: 40px 0;
+}
+
+.aside-title {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: @grey;
+    background-color: @black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: table;
+    width: auto;
+    text-align: center;
+    border: 1px solid @black;
+    padding: 3px 10px;
+    margin: 0px auto 40px;
+}
+
+.aside.all-wines .widget {
+    padding: 20px 5px;
+}
+/* All wines menu ends */
+
+
+/* Mini cart panel */
+.widget_shopping_cart {
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 300px;
+    height: auto;
+    color: @black;
+    background-color: white;
+    padding: 10px 15px 5px 15px;
+    border-top: 1px solid @black;
+    border-bottom: 1px solid @black;
+    z-index: 9999;
+    display: none;
+    border: 1px solid #dedede;
+}
+
+.widget_shopping_cart.scrolled {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.10), 0 1px 1px rgba(0,0,0,0.20);
+}
+
+.widget_shopping_cart .dropdown-cart-wrap.isempty {
+    display: block;
+    border-bottom: none;
+    margin: 20px 0;
+}
+
+.woocommerce-mini-cart__empty-message,
+.widget_shopping_cart .dropdown-cart-wrap.isempty p {
+    text-align: center;
+    padding: 0;
+}
+
+.woocommerce-mini-cart {
+    padding-left: 0;
+}
+
+.mini_cart_item {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid @black25;
+    margin-bottom: 1em;
+    padding: 7px 0;
+    line-height: 1.4;
+    font-size: 12px;
+}
+
+.mini_cart_item:last-child {
+    border-bottom-color: @black;
+}
+
+.mini_cart_item .remove_from_cart_button {
+    font-size: 14px;
+    color: @red;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin-bottom: 3px;
+    border-radius: 0;
+}
+
+.mini_cart_item .remove_from_cart_button:hover,
+.mini_cart_item .remove_from_cart_button:focus {
+    color: @white;
+    background-color: @red;
+}
+
+.mini_cart_item .wc-thumb-title {
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 80%;
+    margin-right: 7px;
+    color: @black;
+}
+
+.mini_cart_item .wc-thumb-title img {
+    width: auto;
+    height: 40px;
+    margin: 0 10px 2px 5px;
+}
+
+.mini_cart_item .quantity {
+    text-align: right;
+}
+
+.woocommerce-mini-cart__total {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 13px;
+}
+
+.woocommerce-mini-cart__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.woocommerce-mini-cart__buttons a {
+    color: @black;
+    border-bottom: 1px solid @black;
+    padding: 7px 0;
+}
+
+.woocommerce-mini-cart__buttons a:hover,
+.woocommerce-mini-cart__buttons a:focus {
+    color: @red;
+    border-bottom-color: @red;
+}
+/* Mini cart panel ends */
+

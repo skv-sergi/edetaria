@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+
+/* TEAM */
+
+Site: www.sokvist.com
+Twitter: @SokvistWeb        
+
+
+/* THANKS */
+
+Name: name or url
+                        
+
+/* SITE */
+
+Last update: YYYY/MM/DD 
+Standards: HTML5, CSS3, 
+Components: Modernizr, jQuery, etc.

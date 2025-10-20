@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<title>Métodes de selecció condicionals - Fish and Ships for WooCommerce</title>
+<link rel="stylesheet" href="../../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+	<h1>Métodes de selecció condicionals</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Ajut principal</a>
+					<strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Condicions de selecció</a></strong>
+					<a href="shipping_costs.html" data-fns-tip="shipping_costs">Costos d'enviament</a>
+					<a href="group_by.html" data-fns-tip="group_by">Agrupar per</a>
+					<a href="special_actions.html" data-fns-tip="special_actions">Accions Especials</a>
+					<a href="other_fields.html" data-fns-tip="other_fields">Altres camps i registres (logs)</a>
+					<a href="pro.html" data-fns-tip="pro">Free vs Pro</a>
+					<a href="help.html" data-fns-tip="help">Ajut i Suport</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"><a href="../sel_conditions.html" title="English" data-fns-tip="sel_conditions" data-fns-lang="en">EN</a> <a href="../es/sel_conditions.html" title="Español" data-fns-tip="sel_conditions" data-fns-lang="es">ES</a> <strong><a href="sel_conditions.html" title="Català" data-fns-tip="sel_conditions" data-fns-lang="ca">CA</a></strong></nav>
+
+<!-- translators: here start text content -->
+<h2>15 métodes de selecció condicionals a les regles d'enviament</h2>
+<div class="float_img">
+	<a href="../img/selection-options.png" target="_blank">
+		<img src="../img/selection-options.png" width="313" height="410" alt="The selection conditions" />
+	</a>
+</div>
+<p>Fish and Ships per a WooCommerce duu una àmplia col·lecció de <strong>mètodes de selecció</strong>, aquests son:</p>
+<table class="methods striped"><tbody>
+	<tr>
+		<th><h3>Preu:</h3></th>
+		<td>
+			<p>Es tindrà en compte el preu dels productes <strong>abans</strong> d’impostos. Si estan rebaixats, es prendrà aquest preu.</p>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<h3>Pes:</h3>
+		</th>
+		<td>
+			<p>Si els productes no tenen pes establert, el valor a considerar serà 0.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Volum:</h3></th>
+		<td>
+			<p>El valor a comparar serà la multiplicació de <strong>Ample x Alt x Llarg</strong>. Si no té mida introduïda, el valor serà 0.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Nre. productes cistell:</h3></th>
+		<td>
+			<p>Es considerarà la <strong>quantitat de productes</strong> al cistell. Tingues en compte que el mètode d’agrupament pot generar confusió! Si tries no agrupar els productes i considerar-los un a un, el valor a considerar serà sempre&nbsp;1 (veure <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a>).</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Dimensió mínima, <br />
+			Dimensió mitjana, <br />
+			Dimensió màxima:</h3></th>
+		<td>
+			<p>Cada un d’ells, considerarà, respectivament, <strong>la cota mínima, mitja i màxima</strong> dels productes. Es indiferent si les mides han estat entrades de petit a gran, o de gran a petit, en un producte de: 10x15x1 o 15x1x10, la mida gran serà sempre 15, la mitjana 10, i la petita&nbsp;1. Aquest mètode considera sempre els productes un a un, independentment del mètode d’agrupació triat. Si un producte no té entrades mides, el valor a considerar serà zero.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Llarg+Ample +Alt&nbsp;<span class="pro">[PRO]</span>:</h3></th>
+		<td>
+			<p>El valor a considerar serà la suma de les cotes. En un producte de: 10x15x1, serà: <strong>10+15+1 = 26</strong>. Aquest mètode considera sempre els productes un a un, independentment del mètode d’agrupació triat. Si un producte no té entrades mides, el valor serà zero.</p>
+		</td>
+	</tr>
+</tbody></table>
+<div class="help_note">
+<p><strong>Nota: Per a tots els selectors amb camps auxiliars de MÍN / MÀX</strong><br />
+Tots els mètodes de: dimensions, pes, volum, preu i nombre de productes al cistell, despleguen uns camps de valor mínim i màxim. Cal tenir en compte que el valor a comparar complirà la condició si es <strong>igual o superior</strong> al camp Mín., i alhora es <strong>inferior</strong> (i no igual) al camp Màx. Clarifiquem-ho amb un exemple:</p>
+<p class="img">
+<a href="../img/min-max-euros.png" target="_blank"><img src="../img/min-max-euros.png" width="596" height="256" alt="Min max values selection" /></a></p>
+<p>Un producte amb un preu de <strong>9.99€</strong> complirà la condició de la regla <strong>#1</strong>. Un de <strong>10€</strong>, complirà la condició de la regla <strong>#2</strong> però no amb la #1.</p>
+</div>
+
+<table class="methods striped"><tbody>
+	<tr>
+		<th><h3>A la categoria,<br /> 
+		NO A la categoria<span class="pro">[PRO]</span>:</h3></th>
+		<td>
+<p>Es tindran en compte les categories de producte <strong>especificades</strong> (product categories), i <strong>no els seus fills</strong>. Si vols que siguin considerats, hauràs d'incloure'ls també. <br />Aquest mètode considera sempre els productes un a un, independentment del mètode d’agrupació triat.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Etiquetat (tagged) com, <br /> 
+		NO Etiquetat com <span class="pro">[PRO]</span>:</h3></th>
+		<td>
+<p>Es tenen en compte les <strong>etiquetes de producte</strong> (product tags). <br />Aquest mètode considera sempre els productes un a un, independentment del mètode d’agrupació triat.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>A la classe d'enviament, <br /> 
+			NOT A la classe d'enviament:</h3></th>
+		<td>
+<p>Es tenen en compte les <strong>classes d'enviament</strong> (shipping classes). <br />Aquest mètode considera sempre els productes un a un, independentment del mètode d’agrupació triat.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Volumètric <span class="pro">[PRO]</span>:</h3></th>
+		<td>
+<p>Amb el càlcul de <strong>pes volumètric</strong> es fa un doble càlcul: per <strong>pes i per volum</strong>, i s’agafa el valor més alt. Al seleccionar pes volumètric, apareix a sota de la taula de regles un nou camp, per a que introduïm el <strong>factor de pes volumètric</strong>, que has d'obtenir de l'agència de transport:</p>
+		</td>
+	</tr>
+</tbody></table>
+
+			<p class="img">
+			<a href="../img/volumetric-mks" target="_blank"><img src="../img/volumetric-mks.png" width="659" height="245" alt="Volumetric weight factor" /></a></p>
+			<p>Com funciona? Imagina un factor de pes volumètric de 100 quilos per metre cúbic. La  botiga del nostre exemple està configurada per treballar en centímetres i grams, convertit, es: 0.1 grams per centímetre cúbic, (aquí tens <a href="https://www.convertworld.com/ca/densitat/" target="_blank">un conversor d'unitats online</a> per a volum/pes):</p>
+			
+			<table class="wp-list-table widefat striped tags" style="max-width:800px">
+				<thead>
+				<tr>
+					<th>Producte</th>
+					<th>Pes</th>
+					<th>Mides</th>
+					<th>Volum</th>
+					<th>Pes volumètric</th>
+					<th class="align_center">Valor a considerar</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Samarreta</td>
+					<td class="align_center">100 g.</td>
+					<td>25x40x2 cm</td>
+					<td>2000 cm<sup>3</sup></td>
+					<td class="grouped last_right">2000 * 0.1 = <br /><strong>200 g.</strong></td>
+					<td class="align_center"><strong>200 g.</strong></td>
+				</tr>
+				<tr>
+					<td>Portàtil</td>
+					<td class="grouped last_right"><strong>1500 g.</strong></td>
+					<td>26x40x10 cm</td>
+					<td>10400 cm<sup>3</sup></td>
+					<td class="align_center">10400 * 0.1 = <br />1040 g.</td>
+					<td class="align_center"><strong>1500 g.</strong></td>
+				</tr>
+				</tbody>
+			</table>
+			<p>En els productes lleugers, el valor a considerar serà el pes volumètric calculat. En els productes pesats, serà considerat el pes real del producte. <strong>Sempre el de major valor</strong>.</p>
+
+<h2>I... ara?</h2>
+<p>Acabem de veure els mètodes de selecció. Ara, aprenent com funcionen els càlculs de costos ja podràs fer un ús bàsic de Fish and Ships:</p>
+<p class="fns_do_actions"><a href="shipping_costs.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="shipping_costs">Costos d'enviament</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+</body>
+</html>

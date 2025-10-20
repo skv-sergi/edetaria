@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Conditional selection methods - Fish and Ships for WooCommerce</title>
+<link rel="stylesheet" href="../assets/css/help-alone.css?v=1.0.2" media="all" />
+<link rel="stylesheet" href="../assets/css/dashicons.css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+</head>
+
+<body>
+	<h1>Conditional selection methods</h1>
+	<div id="content">
+		<div class="wc_fns_cont_cols clearfix">
+			<div class="wc_fns_col_menu">
+				<nav class="wc_fns_nav_popup">
+					<a href="main.html" data-fns-tip="main">Main</a>
+					<strong><a href="sel_conditions.html" data-fns-tip="sel_conditions">Selection conditions</a></strong>
+					<a href="shipping_costs.html" data-fns-tip="shipping_costs">Shipping costs</a>
+					<a href="group_by.html" data-fns-tip="group_by">Group-by</a>
+					<a href="special_actions.html" data-fns-tip="special_actions">Special Actions</a>
+					<a href="other_fields.html" data-fns-tip="other_fields">Other fields & logs</a>
+					<a href="pro.html" data-fns-tip="pro">Free vs Pro</a>
+					<a href="help.html" data-fns-tip="help">Help and Support</a>
+				</nav>
+			</div>
+			<div class="wc_fns_col_content">
+				<nav class="lang_switch"><strong><a href="sel_conditions.html" title="English" data-fns-tip="sel_conditions" data-fns-lang="en">EN</a></strong> <a href="es/sel_conditions.html" title="Español" data-fns-tip="sel_conditions" data-fns-lang="es">ES</a> <a href="ca/sel_conditions.html" title="Català" data-fns-tip="sel_conditions" data-fns-lang="ca">CA</a></nav>
+
+<!-- translators: here start text content -->
+<h2>15 conditional selection methods on shipping rules</h2>
+<div class="float_img">
+	<a href="img/selection-options.png" target="_blank">
+		<img src="img/selection-options.png" width="313" height="410" alt="The selection conditions" />
+	</a>
+</div>
+<p>Fish and Ships for WooCommerce comes with a large range of <strong>selection methods</strong>, these are:</p>
+<table class="methods striped"><tbody>
+	<tr>
+		<th><h3>Price:</h3></th>
+		<td>
+			<p>Price products will be taken <strong>before taxes</strong>. If there is a sale price, it will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<th>
+			<h3>Weight:</h3>
+		</th>
+		<td>
+			<p>If the products haven't weight set, 0 will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Volume:</h3></th>
+		<td>
+			<p>The taken value will be the multiplication of <strong>Width x Height x Length</strong>. If size has not been seet, 0 will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Cart items:</h3></th>
+		<td>
+			<p>The <strong>product quantity</strong> in the cart will be taken. Note that the group-by criteria can be confusing! If you set to non-group then products will be taken one by one, and quantity becomes always&nbsp;1 (see <a href="group_by.html" class="wc_fns_nav_popup" data-fns-tip="group_by">group-by</a>).</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Min dimension, <br />Mid dimension, <br />Max dimension:</h3></th>
+		<td>
+			<p>Each of them will consider, respectively, the <strong>small, middle and large dimension</strong> of the products. It does not matter if the sizes have been entered from small to large, or from large to small, in a product of: 10x15x1 or 15x1x10, the dimension will always be 15, the middle 10, and the small 1. This method always take the products one by one, regardless of the grouping method chosen. If a product have not size set, the value 0 will be taken.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Lenght+Width +Height&nbsp;<span class="pro">[PRO]</span>:</h3></th>
+		<td>
+			<p>The value taken will be the sum of the dimensions. In a product of: 10x15x1, it will be: <strong>10+15+1 = 26</strong>. This method always take the products one by one, regardless of the grouping method chosen. If a product have not size set, the value 0 will be taken.</p>
+		</td>
+	</tr>
+</tbody></table>
+<div class="help_note">
+
+<p><strong>Note: For all selectors with MIN / MAX auxiliary fields</strong><br />
+The methods: dimensions, weight, volume, price and number of products in cart display fields of minimum and maximum value. Keep in mind that the taken value will match if it is <strong>equal or greater</strong> than the Min field and at the same time <strong>lower</strong> (and not equal) than the Max field. Let's clarify this with an example:</p>
+
+<p class="img">
+<a href="img/min-max.png" target="_blank"><img src="img/min-max.png" width="596" height="256" alt="Min max values selection" /></a></p>
+<p>A product priced at <strong>$9.99</strong> will match rule <strong>#1</strong>. One of <strong>$10</strong>, will match rule <strong>#2</strong> but not #1.</p>
+</div>
+
+<table class="methods striped"><tbody>
+	<tr>
+		<th><h3>In Category,<br /> NOT In Category <span class="pro">[PRO]</span>:</h3></th>
+		<td>
+<p>The <strong>selected categories</strong> will be taken, not <strong>his childs</strong>. You should include it also if you want it matches. <br />This method always take the products one by one, regardless of the grouping method chosen.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Tagged as, <br /> NOT Tagged as <span class="pro">[PRO]</span>:</h3></th>
+		<td>
+<p><strong>Product tags</strong> will be taken. <br />This method always take the products one by one, regardless of the grouping method chosen.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>In shipping class, <br /> NOT In shipping class:</h3></th>
+		<td>
+<p><strong>Shipping class</strong> will be taken. <br />This method always take the products one by one, regardless of the grouping method chosen.</p>
+		</td>
+	</tr>
+	<tr>
+		<th><h3>Volumetric <span class="pro">[PRO]</span>:</h3></th>
+		<td>
+<p>For the <strong>volumetric weight</strong> two calculations will be done: by weight and volume, and the highest value will be taken. When selecting volumetric weight, a new field appears below the rules table so that you can enter the <strong>volumetric weight factor</strong>, you should get it from your transport agency:</p>
+		</td>
+	</tr>
+</tbody></table>
+
+			<p class="img">
+			<a href="img/volumetric.png" target="_blank"><img src="img/volumetric.png" width="659" height="245" alt="Volumetric weight factor" /></a></p>
+			<p>How it works? Let's say a volumetric weight factor of 3,5 lb/ft<sup>3</sup>. Our shop example is configured to work with pounds and inches, converted, is: 0,002 pounds per cubic inch, (here you have <a href="https://www.convertworld.com/en/density/" target="_blank">an online conversor units</a> for volume/weight):</p>
+			
+			<table class="wp-list-table widefat striped tags" style="max-width:800px">
+				<thead>
+				<tr>
+					<th>Product</th>
+					<th>Weight</th>
+					<th>Size</th>
+					<th>Volume</th>
+					<th>Volumetric weight</th>
+					<th class="align_center">Taken value</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Shirt</td>
+					<td class="align_center">0.2 lbs</td>
+					<td>10x15x1 in</td>
+					<td>150 in<sup>3</sup></td>
+					<td class="grouped last_right">150 * 0.002 = <br /><strong>0.3 lbs</strong></td>
+					<td class="align_center"><strong>0.3 lbs</strong></td>
+				</tr>
+				<tr>
+					<td>Laptop</td>
+					<td class="grouped last_right"><strong>3 lbs</strong></td>
+					<td>16x10x4 in</td>
+					<td>640 in<sup>3</sup></td>
+					<td class="align_center">640 * 0.002 = <br />1.28 lbs</td>
+					<td class="align_center"><strong>3 lbs</strong></td>
+				</tr>
+				</tbody>
+			</table>
+			<p>On lightweight products, the taken value will be the calculated volumetric weight. In heavy products, the weight value will be taken. <strong>Always the highest value</strong>.</p>
+<h2>And ... now?</h2>
+<p>We just saw the selection methods. Now, by learning how shipping costs work, we can make a basic use of Fish and Ships:</p>
+<p class="fns_do_actions"><a href="shipping_costs.html" class="button-rounded wc_fns_nav_popup" data-fns-tip="shipping_costs">Shipping costs</a></p>
+
+<!-- translators: here ends text content -->
+			</div><!-- /wc_fns_col_content -->
+		</div>
+	</div>
+</body>
+</html>
