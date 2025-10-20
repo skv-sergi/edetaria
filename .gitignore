@@ -1,0 +1,41 @@
+# Ignore WordPress core files (if managed externally)
+wp-admin/
+wp-includes/
+
+# Ignore environment-specific configuration
+wp-config.php
+wp-config-*.php  # If you have multiple config files
+
+# Ignore sensitive files
+*.log
+*.sql
+*.sqlite
+*.db
+.env
+.htaccess
+
+# Ignore uploaded media files (optional)
+wp-content/uploads/
+
+# Ignore dependency directories
+node_modules/
+vendor/
+
+# Ignore build and cache files
+*.css.map
+*.js.map
+*.DS_Store
+*.bak
+*.swp
+*.swo
+*.tmp
+*.lock
+*.zip
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Ignore composer dependencies (if using Composer)
+composer.lock
