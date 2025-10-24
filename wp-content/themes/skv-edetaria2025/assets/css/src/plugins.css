@@ -1,5 +1,5 @@
 /*! Plugins */
-// ==========================================================================
+/* ==========================================================================*/
 
 /*!
  * Hamburgers
@@ -22,13 +22,13 @@
     color: inherit;
     text-transform: none;
     background-color: transparent;
-    border: 1px solid @black;
+    border: 1px solid var(--black);
     margin: 25px 2px 0 0;
     overflow: visible; }
 
-.hamburger:hover {
+/* .hamburger:hover {
     //opacity: 0.7;
-}
+} */
 
 .hamburger-box {
     width: 27px;
@@ -49,7 +49,7 @@
 .hamburger-inner::after {
     width: 16px;
     height: 1px;
-    background-color: @black;
+    background-color: var(--black);
     border-radius: 1px;
     position: absolute;
     transition-property: -webkit-transform;
@@ -137,7 +137,7 @@ header nav ul#nav.sf-menu li ul li a {
 }
 
 header.scrolled nav ul#nav.sf-menu li ul {
-    background-color: @white;
+    background-color: var(--white);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -170,7 +170,7 @@ header.scrolled nav ul#nav.sf-menu li ul {
 .flexslider .slides > li {
     display: none;
     -webkit-backface-visibility: hidden;
-    height: ~"calc(100vh + 100px)";
+    height: calc(100vh + 100px);
 }
 
 .touch .flexslider .slides > li {
@@ -195,9 +195,9 @@ header.scrolled nav ul#nav.sf-menu li ul {
     background-image: url(../images/slide2.jpg);
 }
 
-.flexslider .slides > li:nth-of-type(4) {
+/* .flexslider .slides > li:nth-of-type(4) {
     //background-image: url(../images/slide4.jpg);
-}
+} */
 
 @media only screen and (max-width: 768px) {
     .flexslider .slides > li:first-of-type {
@@ -289,9 +289,9 @@ html[xmlns] .slides {
 
 
 /* Next/prev arrows */
-.flex-direction-nav {
+/* .flex-direction-nav {
   *height: 0;
-}
+} */
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
@@ -415,7 +415,7 @@ div.cs-active {
 
 @media screen and (max-width: 30em) {
 	.cs-skin-circular > span { 
-        //width: 80px; 
+        /*  */
         height: 80px;
     }
 }
@@ -935,7 +935,7 @@ grid {
 	height: auto;
 	background: #3085a3;
 	text-align: center;
-	//cursor: pointer;
+	/* //cursor: pointer; */
 }
 
 .grid figure img {
@@ -976,8 +976,8 @@ grid {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	//width: 100%;
-	//height: 100%;
+	/* //width: 100%;
+	//height: 100%; */
     padding: 16px 24px;
     color: white;
     background-color: rgba(203, 51, 59, 1);
@@ -1068,8 +1068,8 @@ figure.effect-skv h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 14px;
-    background-color: @black;
-    border: 1px solid @black;
+    background-color: var(--black);
+    border: 1px solid var(--black);
     display: inline-block;
     margin-bottom: 3px;
     margin-top: 0;
@@ -1095,7 +1095,7 @@ figure.effect-skv p {
 	margin: 0 0 1px;
 	padding: 2px 20px;
 	background-color: rgba(255, 255, 255, 0);
-	color: @black;
+	color: var(--black);
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 14px;
@@ -1118,15 +1118,15 @@ figure.effect-skv p em {
     margin: -7px 0 7px;
     padding: 5px 10px;
     color: white;
-    background-color: @black;
+    background-color: var(--black);
     text-shadow: none;
 }
 
 figure.effect-skv p a {
-    color: @black;
+    color: var(--black);
     text-transform: none;
     text-decoration: none;
-    border-bottom: 1px dotted @black;
+    border-bottom: 1px dotted var(--black);
     letter-spacing: 2px;
 }
 
@@ -1213,7 +1213,7 @@ figure.effect-skv:hover img {
 }
 
 figure.effect-skv:hover p {
-	//opacity: 0;
+	/* //opacity: 0; */
 	transform: translate3d(-20px,0,0);
     background-color: rgba(255, 255, 255, 0.5);
     background-image: url(../images/beige-paper.png);
@@ -1252,9 +1252,9 @@ figure.effect-skv2.color1 {
     background-repeat: repeat;
 }
 
-figure.effect-skv2 figcaption {
+/* figure.effect-skv2 figcaption {
 	//z-index: 1;
-}
+} */
 
 figure.effect-skv2 img {
 	opacity: 0.1;
@@ -1271,8 +1271,8 @@ figure.effect-skv2 h2 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 14px;
-    background-color: @black;
-    border: 1px solid @black;
+    background-color: var(--black);
+    border: 1px solid var(--black);
     display: inline-block;
     margin-bottom: 2px;
     margin-top: 0;
@@ -1294,7 +1294,7 @@ figure.effect-skv2 p {
     line-height: 1.2;
     padding: 2px 10px;
     margin-top: 2px;
-    color: @black;
+    color: var(--black);
     letter-spacing: 2px;
 	position: relative;
     
@@ -1373,14 +1373,14 @@ figure.effect-skv3 h2 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 14px;
-    background-color: @black;
-    border: 1px solid @black;
+    background-color: var(--black);
+    border: 1px solid var(--black);
     display: inline-block;
     margin-bottom: 3px;
     margin-top: 0;
     padding: 3px 10px;
     line-height: 1.5;
-    //box-shadow: 0 1px 5px rgba(0,0,0,0.5);
+    /* //box-shadow: 0 1px 5px rgba(0,0,0,0.5); */
 }
 
 figure.effect-skv3 p {
@@ -1499,7 +1499,7 @@ figure.effect-skv3:hover li {
 }
 
 figure.effect-skv3 li a:hover {
-    background-color: @black25;
+    background-color: var(--black25);
 }
 
 

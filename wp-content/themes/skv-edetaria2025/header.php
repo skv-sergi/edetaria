@@ -30,7 +30,7 @@
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-precomposed.png">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600i|Nunito:400,800" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?ver=2.0">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style-min.css?ver=2.0">
    
     <!-- Open Graph -->
     <meta property="og:locale" content="es-ES">
