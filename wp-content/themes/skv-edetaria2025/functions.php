@@ -693,7 +693,7 @@ function grd_woocommerce_script_cleaner() {
 	remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
 	// Unless we're in the store, remove all the cruft!
 	if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
-		wp_dequeue_script( 'wc-add-to-cart' );
+		//wp_dequeue_script( 'wc-add-to-cart' );
 		wp_dequeue_script( 'wc-cart-fragments' );
 		wp_dequeue_script( 'wc-checkout' );
 		wp_dequeue_script( 'wc-add-to-cart-variation' );

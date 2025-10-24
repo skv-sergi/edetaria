@@ -125,7 +125,7 @@
 
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/vendor/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/min/plugins.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/min/main.min.js?ver=2.0"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/min/main.min.js?ver=2.1"></script>
 
     
     <?php wp_footer(); ?>
