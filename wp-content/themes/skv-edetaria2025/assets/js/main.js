@@ -266,6 +266,16 @@ $(document).ready(function(){
         randomRot();
         
     }
+
+
+
+    document.querySelectorAll('.woocommerce-loop-product__title').forEach(h2 => {
+        const words = h2.textContent.split(' ');
+        if (words.length > 1) {
+            h2.innerHTML = `<span>${words.shift()}</span> ${words.join(' ')}`;
+        }
+    });
+
     
 
 });

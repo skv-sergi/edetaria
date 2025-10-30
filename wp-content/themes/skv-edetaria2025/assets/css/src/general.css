@@ -11,23 +11,25 @@ body {
 
 body a {
     text-decoration: none;
-    color: --red;
+    /* color: var(--red); */
     transition: all .2s linear;
 }
 
-body a:hover,
+/* body a:hover,
 body a:focus {
-    color: --coffee;
-}
+    color: var(--coffee);
+} */
 
 strong {
     font-weight: 800;
 }
 
 .wrapper {
-	max-width: 1200px;
+	/* max-width: 1200px; */
+    max-width: 1514px;
 	height: auto;
 	margin: 0 auto;
+    padding: 0 20px;
     position: relative;
 }
 
@@ -243,9 +245,13 @@ header.fixed.fade-out .logo {
 }
 
 header nav {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
     margin: 0;
-    padding: 0 0 0 30px;
+    padding: 0;
     z-index: 9999;
 }
 
@@ -255,6 +261,7 @@ header.fixed.fade-out nav {
 
 header nav ul#nav {
     list-style: none;
+    margin-right: auto;
 }
 
 header nav ul#nav li {
@@ -338,7 +345,7 @@ header .language ul {
     float: right;
     list-style: none;
     margin-top: 23px;
-    margin-right: 20px;
+    margin-right: 0;
 }
 
 header .language ul li {
@@ -350,7 +357,7 @@ header .language ul li a {
     font-weight: 400;
     display: block;
     color: var(--black);
-    border: 1px solid --gold;
+    border: 1px solid var(--gold);
     width: 31px;
     height: 31px;
     line-height: 31px;
@@ -365,8 +372,8 @@ header .language ul li.active a {
 }
 
 header .language ul li a:hover {
-    border: 1px solid --gold;
-    box-shadow: 0 0 5px --gold;
+    border: 1px solid var(--gold);
+    box-shadow: 0 0 5px var(--gold);
 }
 
 header .shopping-cart {
@@ -384,7 +391,7 @@ header .shopping-cart {
 }
 
 header .shopping-cart:hover {
-    background-color: --gold-lighter;
+    background-color: var(--gold-lighter);
 }
 
 header .shopping-cart .cart-contents-count {
@@ -396,24 +403,61 @@ header .shopping-cart .cart-contents-count {
     margin: 0;
 }
 
-@media (max-width: 1148px) {
-    header .logo {
-        padding-right: 30px;
-    }
-    
-    header nav {
-        margin-left: 0;
-    }
-    
-    header nav ul#nav li {
-        letter-spacing: 0;
-    }
-    
-    header nav ul#nav li a {
-        padding: 0 11px;
-    }
+header .shop-link a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 0 0;
+    padding: 0 20px;
+    height: 100%;
+    color: var(--white);
+    background-color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 9999;
 }
 
+header .shop-link a:hover,
+header .shop-link a:focus {
+    color: var(--black);
+    background-color: var(--gold);
+}
+
+header .account-link a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    margin: 23px 2px auto auto;
+    border-radius: 0;
+    color: var(--black);
+    background-color: transparent;
+}
+
+header .account-link a .icon {
+    fill: var(--black);
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+
+header .account-link a:hover,
+header .account-link a:focus {
+    background-color: var(--gold)
+}
+
+header .account-link a .label,
+header .account-link span .label {
+    display: none;
+}
 
 /* Main */
 main {
@@ -704,7 +748,7 @@ h1.big-title {
 /*  Intro Section  */
 .intro {
     display: block;
-    padding: 0 60px;
+    padding: 0 20px;
 }
 
 .intro h1 {
@@ -815,7 +859,8 @@ h1.big-title {
 
 .separator {
     min-height: 60px;
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 1514px;
     margin: 0 auto;
     background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23adabab' fill-opacity='0.5' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
@@ -844,7 +889,8 @@ h1.big-title {
 }
 
 .separator-header::before {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 1514px;
     width: 100%;
     height: 30px;
     margin: 0 auto;
@@ -924,7 +970,8 @@ footer {
 }
 
 footer .wrapper-footer {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 1514px;
     margin: 0 auto;
     /* //float: left; */
 }

@@ -30,7 +30,7 @@
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-precomposed.png">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600i|Nunito:400,800" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style-min.css?ver=2.0">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style-min.css?ver=2.1">
    
     <!-- Open Graph -->
     <meta property="og:locale" content="es-ES">
@@ -78,20 +78,30 @@
             </div>
             
 			<nav id="nav_menu">
+                <?php html5blank_nav(); ?>
+
+                <div class="shop-link">
+                    <a href="<?php echo site_url( '/shop' ); ?>"><?php _e( 'Shop', 'html5blank' ); ?></a>
+                </div>
+
+                <div class="account-link">
+                    <a href="/my-account" class="login">
+                        <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21v-2h7V5h-7V3h7q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm-2-4l-1.375-1.45l2.55-2.55H3v-2h8.175l-2.55-2.55L10 7l5 5z"></path></svg>
+                        <span class="label">My Account</span>
+                    </a>
+                </div>
+                    
                 <div class="shopping-cart">
                     <span class="fa fa-shopping-cart"></span>
                     <span class="cart-contents-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
                 </div>
+
                 <div class="language" id="dd">
                     <?php qtranxf_generateLanguageSelectCode('text') ?>
                 </div>
-				<?php html5blank_nav(); ?>
 			</nav>
-            
-		</div>
-	</header><!--  End Header  -->
-	
-	<div class="woocommerce widget_shopping_cart">
+
+            <div class="woocommerce widget_shopping_cart">
 
         <div class="cart-dropdown">
             <div class="cart-dropdown-inner">
@@ -100,3 +110,8 @@
         </div><!-- /cart-dropdown -->
 
     </div><!-- /widget_shopping_cart -->
+            
+		</div>
+	</header><!--  End Header  -->
+	
+	

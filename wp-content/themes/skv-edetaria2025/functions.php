@@ -673,17 +673,28 @@ function deregister_cf7_styles() {
 // Disable the default stylesheet
 add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 
+
+
+// remove global inline styles
+// https://webgaku.net/wordpress/global-styles-inline-css/ & https://perfmatters.io/docs/remove-global-inline-styles-wordpress/
+function remove_global_styles(){
+    wp_dequeue_style( 'global-styles' );
+}
+add_action( 'wp_enqueue_scripts', 'remove_global_styles' );
+
+
+
 /**
  * Forwarding WooCommerce 'Shop' page to another page on a site
  * https://stackoverflow.com/questions/40382876/forwarding-woocommerce-shop-page-to-another-page-on-a-site
  */
-function custom_shop_page_redirect() {
+/* function custom_shop_page_redirect() {
     if( is_shop() ){
         wp_redirect( home_url( '/els-vins/' ) );
         exit();
     }
 }
-add_action( 'template_redirect', 'custom_shop_page_redirect' );
+add_action( 'template_redirect', 'custom_shop_page_redirect' ); */
 
 /**
  * Manage WooCommerce styles and scripts.
@@ -750,6 +761,135 @@ function woo_remove_product_tabs( $tabs ) {
     unset( $tabs['additional_information'] );  	// Remove the additional information tab
     return $tabs;
 }
+
+
+// Change number of products per page on the shop page
+add_filter( 'loop_shop_per_page', 'kcc_products_per_page', 20 );
+
+function kcc_products_per_page( $cols ) {
+    return 100; // change this to the number you want
+}
+
+
+
+// Update custom cart count and mini cart via AJAX
+add_filter( 'woocommerce_add_to_cart_fragments', 'update_cart_fragments' );
+
+function update_cart_fragments( $fragments ) {
+    ob_start();
+    ?>
+    <span class="cart-contents-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+    <?php
+    $fragments['span.cart-contents-count'] = ob_get_clean();
+
+    ob_start();
+    ?>
+    <div class="woocommerce widget_shopping_cart">
+        <div class="cart-dropdown">
+            <div class="cart-dropdown-inner">
+                <?php woocommerce_mini_cart(); ?>
+            </div>
+        </div>
+    </div>
+    <?php
+    $fragments['div.widget_shopping_cart'] = ob_get_clean();
+
+    return $fragments;
+}
+
+
+
+// Remove the "Showing x–y of z results" text from the shop page
+add_action( 'init', function() {
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20 );
+});
+
+
+
+
+/*
+* Add a product category filter dropdown next to the sorting options
+*/
+// Remove default sorting form
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+// Wrap both sorting and category filter together
+add_action( 'woocommerce_before_shop_loop', function() {
+    echo '<div class="shop-filters-wrapper">';
+        // Output the sorting dropdown
+        woocommerce_catalog_ordering();
+        // Output the category filter
+        add_category_filter_dropdown();
+    echo '</div>';
+}, 5 ); // priority is now early, before any other output
+
+
+function add_category_filter_dropdown() {
+    if ( ! is_shop() && ! is_product_taxonomy() ) {
+        return; // only show on shop and product category pages
+    }
+
+    // Get all product categories
+    $args = array(
+        'taxonomy'     => 'product_cat',
+        'orderby'      => 'name',
+        'hide_empty'   => false,
+    );
+
+    $all_categories = get_categories( $args );
+    if ( empty( $all_categories ) ) {
+        return;
+    }
+
+    // Current selected category (if any)
+    $current_cat = isset( $_GET['product_cat'] ) ? sanitize_text_field( $_GET['product_cat'] ) : '';
+
+    // Multilingual label
+    $filter_label = 'Filter by category';
+    if ( function_exists( 'qtranxf_getLanguage' ) ) {
+        switch ( qtranxf_getLanguage() ) {
+            case 'ca':
+                $filter_label = 'Filtra per col·lecció';
+                break;
+            case 'es':
+                $filter_label = 'Filtrar por colección';
+                break;
+            case 'en':
+            default:
+                $filter_label = 'Filter by collection';
+                break;
+        }
+    }
+
+    echo '<form method="get" class="woocommerce-ordering category-filter">';
+    echo '<select name="product_cat" onchange="this.form.submit()">';
+    echo '<option value="">' . esc_html( $filter_label ) . '</option>';
+
+    foreach ( $all_categories as $cat ) {
+        // Skip Uncategorized
+        if ( strtolower( $cat->slug ) === 'uncategorized' ) {
+            continue;
+        }
+
+        $selected = ( $current_cat === $cat->slug ) ? ' selected' : '';
+        echo '<option value="' . esc_attr( $cat->slug ) . '"' . $selected . '>' . esc_html( $cat->name ) . '</option>';
+    }
+
+    echo '</select>';
+
+    // Preserve other GET params (like sorting)
+    foreach ( $_GET as $key => $val ) {
+        if ( $key !== 'product_cat' ) {
+            echo '<input type="hidden" name="' . esc_attr( $key ) . '" value="' . esc_attr( $val ) . '">';
+        }
+    }
+
+    echo '</form>';
+}
+
+
+
+
 
 /** 
  * remove on single product panel 'Additional Information' since it already says it on tab.
@@ -877,8 +1017,8 @@ add_filter( 'woocommerce_get_image_size_single', function( $size ) {
 
 
 /**
- Remove all possible fields
- https://docs.woocommerce.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/
+ * Remove all possible fields
+ * https://docs.woocommerce.com/document/tutorial-customising-checkout-fields-using-actions-and-filters/
  **/
 function wc_remove_checkout_fields( $fields ) {
 
